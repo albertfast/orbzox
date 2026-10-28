@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"],
+    "paths": {
+      "@orvli/game-core": ["./packages/game-core/src/index.ts"],
+      "@orvli/protocol": ["./packages/protocol/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src/**/*.ts", "tests/**/*.ts", "vitest.config.ts"]
+}
